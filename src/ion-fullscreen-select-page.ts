@@ -15,11 +15,11 @@ import {NavController, NavParams} from 'ionic-angular';
 
         <ion-content padding>
             <ion-list>
-                <template ngFor let-option [ngForOf]="options" >
+                <ng-template ngFor let-option [ngForOf]="options" >
                     <button ion-item (click)="select(option.value)">
                         {{ option.title }}
                     </button>
-                </template>
+                </ng-template>
             </ion-list>
         </ion-content>
     `,
