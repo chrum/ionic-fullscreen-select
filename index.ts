@@ -9,10 +9,8 @@ import {FullScreenSelectPage} from './src/ion-fullscreen-select-page';
 @NgModule({
     declarations: [
         FullScreenSelectPage,
-        FullScreenSelectComponent
     ],
     entryComponents: [
-        FullScreenSelectPage,
         FullScreenSelectPage
     ],
     imports: [
