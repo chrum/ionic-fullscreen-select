@@ -7,8 +7,8 @@
     "url": "git+https://github.com/chrum/ionic-fullscreen-select.git"
   },
   "scripts": {
-    "build": "ngc",
-    "install": "ngc"
+    "build": "./node_modules/.bin/ngc -p ./tsconfig.json",
+    "install": "./node_modules/.bin/ngc -p ./tsconfig.json"
   },
   "keywords": [
     "ng2",
@@ -24,16 +24,19 @@
   "module": "index.js",
   "typings": "index.d.ts",
   "license": "MIT",
+  "dependencies": {
+    "@angular/core": ">=2.0.0"
+  },
   "devDependencies": {
-    "@angular/common": "^5.0.0",
-    "@angular/forms": "^5.0.0",
-    "@angular/http": "^5.0.0",
-    "@angular/platform-browser": "^5.0.0",
-    "@angular/platform-browser-dynamic": "^5.0.0",
-    "@angular/platform-server": "^5.0.0",
-    "@angular/compiler": "^5.0.0",
-    "@angular/compiler-cli": "^5.0.0",
-    "@angular/core": "^5.0.0",
+    "@angular/common": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/platform-server": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
     "ionic-angular": "^3.9.1",
     "rxjs": ">=5.1.1",
     "zone.js": ">=0.8.4",
